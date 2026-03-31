@@ -1,6 +1,9 @@
 import React from 'react';
+import Link from 'next/link';
 import { FaWhatsapp } from 'react-icons/fa';
 import { BsCheckCircleFill } from 'react-icons/bs';
+import { IoCall } from 'react-icons/io5';
+import message from './message';
 
 export default function Hero() {
   return (
@@ -28,14 +31,15 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="bg-[#CFA45A] hover:bg-[#b98c4e] text-white font-semibold py-3 px-8 rounded-xl shadow-lg transition-all items-center">
-                Request a Quote
-              </button>
+               <Link href={`https://wa.me/263772644663?text=${message}`} className="bg-[#005A5A] text-white hover:bg-[006A5A] font-semibold py-3 px-8 rounded-xl shadow-lg flex items-center justify-center gap-2 transition-all">
+                  <FaWhatsapp className="text-xl" />
+                  Request a Quote
+              </Link>
 
-              <button className="bg-white text-[#005A5A] hover:bg-[#F2EDE3] font-semibold py-3 px-8 rounded-xl shadow-lg flex items-center gap-2 transition-all">
-                <FaWhatsapp className="text-xl" />
-                Call / WhatsApp
-              </button>
+              <Link href="tel:263772644663" className="bg-white text-[#005A5A] hover:bg-[#F2EDE3] font-semibold py-3 px-8 rounded-xl shadow-lg flex items-center justify-center gap-2 transition-all">
+                <IoCall className="text-xl" />
+                 Call Us Now
+              </Link>
             </div>
 
             {/* Trust Badges */}
@@ -54,7 +58,7 @@ export default function Hero() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/pic1.jpg"
+                src="/logo_big.jpeg"
                 alt="Borehole Drilling Rig"
                 className="w-full h-[420px] md:h-[500px] object-cover"
               />

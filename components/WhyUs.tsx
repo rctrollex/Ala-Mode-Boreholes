@@ -45,7 +45,7 @@ export default function WhyUs() {
   ];
 
   return (
-    <section className="w-full py-24 bg-[#F2EDE3] text-[#0D1B2A]">
+    <section className="w-full py-24 bg-[#F2EDE3] text-[#0D1B2A]" id="about">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Section Header */}
@@ -107,9 +107,9 @@ export default function WhyUs() {
               ))}
             </div>
 
-            <p className="text-[#005A5A] font-semibold text-lg cursor-pointer hover:underline">
+            {/* <p className="text-[#005A5A] font-semibold text-lg cursor-pointer hover:underline">
               Learn More About Us →
-            </p>
+            </p> */}
           </div>
         </div>
 

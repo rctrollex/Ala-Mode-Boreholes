@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
+import message from "./message";
 
 export default function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About Us" },
-    { href: "/services", label: "Services" },
-    { href: "/contact", label: "Contact Us" },
+    { href: "#about", label: "About Us" },
+    { href: "#services", label: "Services" },
+    { href: "#contact", label: "Contact Us" },
   ];
 
   return (
@@ -15,15 +16,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4">
         
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center justify-between py-4">
+        <div className="hidden lg:flex items-center justify-between ">
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/logo.avif"
+              src="/logo1.png"
               alt="Ala Mode Boreholes Logo"
-              width={110}
-              height={65}
+              width={90}
+              height={55}
               className="object-contain"
             />
           </Link>
@@ -42,7 +43,7 @@ export default function Navbar() {
 
             {/* CTA Button */}
             <Link
-              href="/contact"
+              href={`https://wa.me/263772644663?text=${message}`}
               className="
                 px-6 py-3 rounded-xl 
                 font-semibold tracking-wide

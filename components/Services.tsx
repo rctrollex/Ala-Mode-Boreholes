@@ -1,4 +1,5 @@
-import React from 'react';
+import Link from 'next/link';
+import message from './message';
 import { 
   FaHammer, 
   FaMapMarkedAlt, 
@@ -61,7 +62,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="w-full py-24 bg-white">
+    <section className="w-full py-24 bg-white" id='services'>
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
@@ -102,24 +103,24 @@ export default function Services() {
               </p>
 
 
-              <a 
+              {/* <a 
                 href="#" 
                 className="inline-flex items-center text-sm font-semibold text-[#005A5A] hover:text-[#003F3F] transition-colors"
               >
                 Learn More
                 <FaArrowRight className="ml-2 text-xs" />
-              </a>
+              </a> */}
             </div>
           ))}
         </div>
 
         {/* CTA */}
         <div className="text-center">
-          <button className="inline-flex items-center px-10 py-4 bg-[#005A5A] text-white font-semibold 
+          <Link href={`https://wa.me/263772644663?text=${message}`} className="inline-flex items-center px-10 py-4 bg-[#005A5A] text-white font-semibold 
                              rounded-xl hover:bg-[#003F3F] transition-all duration-300 shadow-lg">
-            Contact Us For Assistance
+            Request a Quote
             <FaArrowRight className="ml-2" />
-          </button>
+          </Link>
         </div>
 
       </div>

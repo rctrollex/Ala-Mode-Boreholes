@@ -3,15 +3,16 @@ import React, { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { FaBars, FaTimes } from "react-icons/fa"
+import message from "./message"
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false)
 
   const links = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About Us" },
-    { href: "/services", label: "Services" },
-    { href: "/contact", label: "Contact Us" },
+    { href: "#about", label: "About Us" },
+    { href: "#services", label: "Services" },
+    { href: "#contact", label: "Contact Us" },
   ]
 
   return (
@@ -21,7 +22,7 @@ export default function MobileNav() {
         {/* Logo */}
         <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
           <Image
-            src="/logo.avif"
+            src="/logo1.png"
             alt="Logo"
             width={80}
             height={80}
@@ -68,7 +69,7 @@ export default function MobileNav() {
           {/* CTA Button */}
           <div className="pt-4 w-full">
             <Link
-              href="/contact"
+              href={`https://wa.me/263772644663?text=${message}`}
               onClick={() => setIsOpen(false)}
               className="
                 w-full py-3 rounded-xl

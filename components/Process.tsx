@@ -1,5 +1,6 @@
-import React from 'react';
+import Link from 'next/link';
 import { FaSearchLocation, FaTools, FaCog, FaFlask, FaHandshake } from 'react-icons/fa';
+import inspectionMessage  from './message';
 
 const steps = [
   {
@@ -75,9 +76,9 @@ export default function Process() {
         {/* Call to Action Footer */}
         <div className="text-center mt-16">
           <p className="text-gray-700 mb-6 text-lg">Ready to get started with clean, reliable water?</p>
-          <button className="bg-[#085a53] hover:bg-[#064a44] text-white font-semibold py-3 px-8 rounded shadow transition-colors duration-300">
-            Book Your Free Site Inspection
-          </button>
+          <Link href={`https://wa.me/263772644663?text=${inspectionMessage}`} className="bg-[#085a53] hover:bg-[#064a44] text-white font-semibold py-3 px-8 rounded shadow transition-colors duration-300">
+            Book Your Inspection With Us
+          </Link>
         </div>
       </div>
     </section>

@@ -1,5 +1,8 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaWhatsapp, FaShieldAlt, FaHeadset, FaAward } from 'react-icons/fa';
+import message  from './message';
+import inspectionMessage from './message';
 
 const stats = [
   { number: '500+', label: 'Completed Projects' },
@@ -26,13 +29,13 @@ export default function CTA() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-[#d1a365] hover:bg-[#b88d52] text-white font-semibold py-3 px-8 rounded shadow-md transition-colors duration-300 text-center">
+              <Link href={`https://wa.me/263772644663?text=${inspectionMessage}`} className="bg-[#005A5A] text-white hover:bg-[006A5A] font-semibold py-3 px-8 rounded shadow-md transition-colors duration-300 text-center">
                 Book Site Inspection
-              </button>
-              <button className="bg-white hover:bg-gray-100 text-[#085a53] font-semibold py-3 px-8 rounded shadow-md flex items-center justify-center gap-2 transition-colors duration-300">
+              </Link>
+              <Link href={`https://wa.me/263772644663?text=${message}`} className="bg-white hover:bg-gray-100 text-[#085a53] font-semibold py-3 px-8 rounded shadow-md flex items-center justify-center gap-2 transition-colors duration-300">
                 <FaWhatsapp className="text-xl" />
-                <span>Call / WhatsApp</span>
-              </button>
+                <span>Chat on WhatsApp</span>
+              </Link>
             </div>
 
             {/* Trust Indicators */}
