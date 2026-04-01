@@ -5,6 +5,7 @@ import FeaturedProjects from "@/components/FeaturedProjects"
 import Contact from "@/components/Contact"
 import Process from "@/components/Process"
 import CTA from "@/components/CTA"
+import VideosSection from "@/components/VideosSection"
 export default function Home(){
   return(
     <div className="relative min-h-screen w-full">
@@ -13,6 +14,7 @@ export default function Home(){
       <Services/>
       <Process/>
       <FeaturedProjects/>
+      <VideosSection/>
       <CTA/>
       <Contact/>
     </div>
