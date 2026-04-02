@@ -19,21 +19,21 @@ export default function FeaturedVideoProjects() {
     {
       id: 1,
       category: "RESIDENTIAL",
-      title: "Suburban Home Installation",
+      title: "Home Installation",
       videoUrl: "/vid_1.mp4",
       duration: "02:45"
     },
     {
       id: 2,
-      category: "AGRICULTURAL",
-      title: "Farm Irrigation System",
+      category: "COMMUNITY",
+      title: "Home Installation",
       videoUrl: "/vid_2.mp4",
       duration: "04:12"
     },
     {
       id: 3,
-      category: "COMMERCIAL",
-      title: "Business Complex Water Supply",
+      category: "RESIDENTIAL",
+      title: "Home Borehole Installation",
       videoUrl: "/vid_3.mp4",
       duration: "03:30"
     },
@@ -54,28 +54,28 @@ export default function FeaturedVideoProjects() {
     {
       id: 6,
       category: "SERVICE",
-      title: "Emergency Repair Service",
+      title: "Solar Pump, Tank, and Installation Service",
       videoUrl: "/vid_6.mp4",
       duration: "02:20"
     },
     {
       id: 7,
-      category: "INDUSTRIAL",
-      title: "Mining Site Water Solutions",
+      category: "HIGHLIGHTS",
+      title: "Borehole Drilling in Action",
       videoUrl: "/vid_7.mp4",
       duration: "06:15"
     },
     {
       id: 8,
       category: "COMMUNITY",
-      title: "Rural Village Solar Borehole",
+      title: "Rural Village Solar Borehole Installation",
       videoUrl: "/vid_8.mp4",
       duration: "04:50"
     },
     {
-      id: 8,
-      category: "COMMUNITY",
-      title: "Rural Village Solar Borehole",
+      id: 9,
+      category: "RESIDENTIAL",
+      title: "Rural Village Home Installation",
       videoUrl: "/vid__9.mp4",
       duration: "04:50"
     },
